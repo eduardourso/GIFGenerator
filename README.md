@@ -1,6 +1,6 @@
 ![.GIFGenerator](http://i.imgur.com/IDEiCl2.png?1)
 
-[![CI Status](http://img.shields.io/travis/Eduardo Urso/GIFGenerator.svg?style=flat)](https://travis-ci.org/Eduardo Urso/GIFGenerator)
+[![Build Status](https://travis-ci.org/eduardourso/GIFGenerator.svg?branch=master)](https://travis-ci.org/eduardourso/GIFGenerator)
 [![Version](https://img.shields.io/cocoapods/v/GIFGenerator.svg?style=flat)](http://cocoapods.org/pods/GIFGenerator)
 [![License](https://img.shields.io/cocoapods/l/GIFGenerator.svg?style=flat)](http://cocoapods.org/pods/GIFGenerator)
 [![Platform](https://img.shields.io/cocoapods/p/GIFGenerator.svg?style=flat)](http://cocoapods.org/pods/GIFGenerator)
