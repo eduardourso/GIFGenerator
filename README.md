@@ -43,7 +43,7 @@ This generates a GIF from provided images.
 The library is lightweight and very straight forward. Once you have the array of images, pass it to GIFGenerator alongside the url and frame delay. 
 Let me explain those for you: 
 ```
-images - array of images that will compose the GIF file!
+imagesArray - array of images that will compose the GIF file!
 frameDelay  -  is the amount of time between each frame in the GIF.
 destinationURL  - is the url where the GIF file will be stored.
 ```
