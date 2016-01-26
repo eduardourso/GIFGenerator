@@ -13,6 +13,13 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		6B4EEBE91C57920A0068B65F /* bart1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B4EEBE41C57920A0068B65F /* bart1.jpg */; };
+		6B4EEBEA1C57920A0068B65F /* bart2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B4EEBE51C57920A0068B65F /* bart2.jpg */; };
+		6B4EEBEB1C57920A0068B65F /* bart3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B4EEBE61C57920A0068B65F /* bart3.jpg */; };
+		6B4EEBEC1C57920A0068B65F /* bart4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B4EEBE71C57920A0068B65F /* bart4.jpg */; };
+		6B4EEBED1C57920A0068B65F /* bart5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B4EEBE81C57920A0068B65F /* bart5.jpg */; };
+		6B4EEBF01C5792110068B65F /* homer-simpson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B4EEBEE1C5792110068B65F /* homer-simpson.jpg */; };
+		6B4EEBF11C5792110068B65F /* homer-simpson2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B4EEBEF1C5792110068B65F /* homer-simpson2.jpg */; };
 		8F4835C86D86CE3FECC93578 /* Pods_GIFGenerator_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D584E3FDD3E9B6854EAE3058 /* Pods_GIFGenerator_Tests.framework */; };
 		D911E20CF5705AB6B0E7D741 /* Pods_GIFGenerator_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ABF38B613BDF9820AE724AF /* Pods_GIFGenerator_Example.framework */; };
 /* End PBXBuildFile section */
@@ -42,6 +49,13 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6ABF38B613BDF9820AE724AF /* Pods_GIFGenerator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GIFGenerator_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B4EEBE41C57920A0068B65F /* bart1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bart1.jpg; sourceTree = "<group>"; };
+		6B4EEBE51C57920A0068B65F /* bart2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bart2.jpg; sourceTree = "<group>"; };
+		6B4EEBE61C57920A0068B65F /* bart3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bart3.jpg; sourceTree = "<group>"; };
+		6B4EEBE71C57920A0068B65F /* bart4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bart4.jpg; sourceTree = "<group>"; };
+		6B4EEBE81C57920A0068B65F /* bart5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bart5.jpg; sourceTree = "<group>"; };
+		6B4EEBEE1C5792110068B65F /* homer-simpson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "homer-simpson.jpg"; sourceTree = "<group>"; };
+		6B4EEBEF1C5792110068B65F /* homer-simpson2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "homer-simpson2.jpg"; sourceTree = "<group>"; };
 		A57E4CE0E041BD4BD2848717 /* Pods-GIFGenerator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIFGenerator_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GIFGenerator_Tests/Pods-GIFGenerator_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BA668C8A202735598FA1E753 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		BEAECE2072074FF042AF4B20 /* GIFGenerator.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GIFGenerator.podspec; path = ../GIFGenerator.podspec; sourceTree = "<group>"; };
@@ -93,6 +107,7 @@
 		607FACD21AFB9204008FA782 /* Example for GIFGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				6B4EEBE31C5791580068B65F /* Resources */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -137,6 +152,20 @@
 				BA668C8A202735598FA1E753 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		6B4EEBE31C5791580068B65F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6B4EEBEE1C5792110068B65F /* homer-simpson.jpg */,
+				6B4EEBEF1C5792110068B65F /* homer-simpson2.jpg */,
+				6B4EEBE41C57920A0068B65F /* bart1.jpg */,
+				6B4EEBE51C57920A0068B65F /* bart2.jpg */,
+				6B4EEBE61C57920A0068B65F /* bart3.jpg */,
+				6B4EEBE71C57920A0068B65F /* bart4.jpg */,
+				6B4EEBE81C57920A0068B65F /* bart5.jpg */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		A9EE472F93660676D01DC08A /* Pods */ = {
@@ -246,9 +275,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B4EEBEB1C57920A0068B65F /* bart3.jpg in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				6B4EEBEC1C57920A0068B65F /* bart4.jpg in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				6B4EEBE91C57920A0068B65F /* bart1.jpg in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				6B4EEBED1C57920A0068B65F /* bart5.jpg in Resources */,
+				6B4EEBF01C5792110068B65F /* homer-simpson.jpg in Resources */,
+				6B4EEBF11C5792110068B65F /* homer-simpson2.jpg in Resources */,
+				6B4EEBEA1C57920A0068B65F /* bart2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
