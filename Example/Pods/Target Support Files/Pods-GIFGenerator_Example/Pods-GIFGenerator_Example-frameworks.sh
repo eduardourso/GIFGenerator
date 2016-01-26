@@ -84,8 +84,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-GIFGenerator_Example/FLAnimatedImage.framework"
   install_framework "Pods-GIFGenerator_Example/GIFGenerator.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-GIFGenerator_Example/FLAnimatedImage.framework"
   install_framework "Pods-GIFGenerator_Example/GIFGenerator.framework"
 fi

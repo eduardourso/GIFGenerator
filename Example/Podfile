@@ -3,6 +3,7 @@ use_frameworks!
 
 target 'GIFGenerator_Example', :exclusive => true do
   pod 'GIFGenerator', :path => '../'
+  pod 'FLAnimatedImage'
 end
 
 target 'GIFGenerator_Tests', :exclusive => true do

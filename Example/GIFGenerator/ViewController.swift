@@ -8,6 +8,7 @@
 
 import UIKit
 import GIFGenerator
+import FLAnimatedImage
 
 class ViewController: UIViewController {
     
@@ -25,12 +26,12 @@ class ViewController: UIViewController {
             gifGenerator.generateGifFromImages(images2, frameDelay: 0.5, destinationURL: NSURL(fileURLWithPath: destinationPath), callback: { (data, error) -> () in
                 if error == nil {
                     if let data = data {
-                    let image = UIImage(data: data)
-                    let imageView = UIImageView(image: image)
-                    imageView.image = image
-                    imageView.frame = CGRectMake(0, 0, image!.size.width/2, image!.size.height/2)
-                    imageView.center = self.view.center
-                    self.view.addSubview(imageView)
+                        let image = FLAnimatedImage(animatedGIFData: data)
+                        let imageView = FLAnimatedImageView()
+                        imageView.animatedImage = image
+                        imageView.frame = CGRectMake(0, 0, image.size.width/2, image.size.height/2)
+                        imageView.center = self.view.center
+                        self.view.addSubview(imageView)
                     }
                 }
                 
