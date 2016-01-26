@@ -1,5 +1,3 @@
-# GIFGenerator
-
 ![.GIFGenerator](http://i.imgur.com/IDEiCl2.png?1)
 
 [![CI Status](http://img.shields.io/travis/Eduardo Urso/GIFGenerator.svg?style=flat)](https://travis-ci.org/Eduardo Urso/GIFGenerator)
