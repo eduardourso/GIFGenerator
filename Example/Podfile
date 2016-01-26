@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'GIFGenerator_Example', :exclusive => true do
+  pod 'GIFGenerator', :path => '../'
+end
+
+target 'GIFGenerator_Tests', :exclusive => true do
+  pod 'GIFGenerator', :path => '../'
+
+  
+end
