@@ -4,12 +4,12 @@
 
 language: objective-c
 # cache: cocoapods
-# podfile: Example/Podfile
-# before_install:
-# - gem install cocoapods # Since Travis is not always on latest version
-# - pod install --project-directory=Example
+podfile: Example/Podfile
+before_install:
+- gem install cocoapods # Since Travis is not always on latest version
+- pod install --project-directory=Example
 script:
 - set -o pipefail && xcodebuild test -workspace Example/GIFGenerator.xcworkspace -scheme GIFGenerator-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
 - pod lib lint
 script: 
-    - "xctool -workspace Example/GIFGenerator.xcworkspace -scheme GIFGenerator-Example -sdk iphonesimulator8.1 -destination 'platform=iOS Simulator,name=iPhone 5,OS=8.1' build test"
+- "xctool -workspace Example/GIFGenerator.xcworkspace -scheme GIFGenerator-Example -sdk iphonesimulator8.0 -destination 'platform=iOS Simulator,name=iPhone 6,OS=8.0' build test"
