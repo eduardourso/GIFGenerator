@@ -1,0 +1,6 @@
+framework module GIFGenerator {
+  umbrella header "GIFGenerator-umbrella.h"
+
+  export *
+  module * { export * }
+}

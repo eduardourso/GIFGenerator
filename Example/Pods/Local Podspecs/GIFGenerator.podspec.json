@@ -1,0 +1,25 @@
+{
+  "name": "GIFGenerator",
+  "version": "0.1.0",
+  "summary": "A short description of GIFGenerator.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/GIFGenerator",
+  "license": "MIT",
+  "authors": {
+    "Eduardo Urso": "eduardourso@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/GIFGenerator.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "GIFGenerator": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

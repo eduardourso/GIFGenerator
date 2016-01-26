@@ -1,0 +1,6 @@
+framework module Pods_GIFGenerator_Example {
+  umbrella header "Pods-GIFGenerator_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
