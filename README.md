@@ -5,13 +5,12 @@
 [![License](https://img.shields.io/cocoapods/l/GIFGenerator.svg?style=flat)](http://cocoapods.org/pods/GIFGenerator)
 [![Platform](https://img.shields.io/cocoapods/p/GIFGenerator.svg?style=flat)](http://cocoapods.org/pods/GIFGenerator)
 
-## Add to your project
-
+### Add to your project
 There are 2 ways you can add .GIFGenerator to your project:
 
 ### Manual installation
-
 Simply import the 'GIFGenerator' folder into your project then import the classes that you want to use.
+
 #### Obj-C
 ```objective-c
 #import "GIFGenerator.h"
@@ -22,18 +21,17 @@ import GIFGenerator
 ``` 
 
 ### Avaliable in CocoaPods
-
-GIFGenerator is available through [CocoaPods] See the "[Getting Started](http://guides.cocoapods.org/syntax/podfile.html)" guide for more information.
+GIFGenerator is available through [CocoaPods](https://cocoapods.org) See the "[Getting Started](http://guides.cocoapods.org/syntax/podfile.html)" guide for more information.
 
 To install it, simply add the following line to your Podfile:
 
-### Podfile
+#### Podfile
 ```ruby
 platform :ios, '8.0'
 pod "GIFGenerator"
 ```
 
-## Practical use
+### Practical use
 ```swift
 let gifGenerator = GifGenerator()
 gifGenerator.generateGifFromImages(imagesArray, frameDelay: 0.5, destinationURL: url, callback: { (data, error) -> () in
@@ -51,14 +49,11 @@ destinationURL  - is the url where the GIF file will be stored.
 ```
 I recommend you to play with those parameters to see how it can affect the GIF file.
 
-## Example Project
-
+### Example Project
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Author
-
+### Author
 Eduardo Urso, eduardourso@gmail.com
 
-## License
-
-GIFGenerator is available under the MIT license. See the LICENSE file for more info.
+### License
+GIFGeneraor is available under the MIT license. See the LICENSE file for more info.
