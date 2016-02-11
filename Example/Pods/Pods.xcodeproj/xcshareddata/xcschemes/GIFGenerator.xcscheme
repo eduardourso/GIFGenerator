@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '63426E7DA634269DAFC9944B'
+               BlueprintIdentifier = 'D7D7641617DD966EDB1421C7'
                BlueprintName = 'GIFGenerator'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'GIFGenerator.framework'>

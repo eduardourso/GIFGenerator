@@ -10,7 +10,7 @@ import UIKit
 import GIFGenerator
 import FLAnimatedImage
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     let gifGenerator = GifGenerator()
 

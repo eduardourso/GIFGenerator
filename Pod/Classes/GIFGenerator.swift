@@ -2,7 +2,7 @@ import ImageIO
 import MobileCoreServices
 
 
-public class GifGenerator: NSObject {
+@objc public class GifGenerator: NSObject {
     
     /**
      Generate a GIF using a set of images
@@ -13,7 +13,7 @@ public class GifGenerator: NSObject {
      :param: frameDelay an delay in seconds between each frame
      :param: callback set a block that will get called when done, it'll return with data and error, both which can be nil
      */
-    public func generateGifFromImages(images:[UIImage], repeatCount: Int = 0, frameDelay: NSTimeInterval, destinationURL: NSURL, callback:(data: NSData?, error: NSError?) -> ()) {
+   public func generateGifFromImages(images:[UIImage], repeatCount: Int = 0, frameDelay: NSTimeInterval, destinationURL: NSURL, callback:(data: NSData?, error: NSError?) -> ()) {
         
         if let imageDestination = CGImageDestinationCreateWithURL(destinationURL, kUTTypeGIF, images.count, nil) {
             
