@@ -1,6 +1,6 @@
 {
   "name": "GIFGenerator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "Generate animated GIF in iOS",
   "description": "Generates a GIF file and saves it to an specific URL\n- Set frame delays\n- Set loop count",
   "homepage": "https://github.com/eduardourso/GIFGenerator",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/eduardourso/GIFGenerator.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "social_media_url": "https://twitter.com/DuUrso",
   "platforms": {
