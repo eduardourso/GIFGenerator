@@ -26,12 +26,16 @@ import MobileCoreServices
             
             CGImageDestinationSetProperties(imageDestination, gifProperties)
             if CGImageDestinationFinalize(imageDestination) {
+                
                 print("animated GIF file created at ", destinationURL)
+                
                 do {
-                    let attr : NSDictionary? = try NSFileManager.defaultManager().attributesOfItemAtPath(destinationURL.absoluteString)
-                    
-                    if let _attr = attr {
-                        print("FILE SIZE: ", NSByteCountFormatter.stringFromByteCount(Int64(_attr.fileSize()), countStyle: .File))
+                    if let path = destinationURL.path {
+                        let attr : NSDictionary? = try NSFileManager.defaultManager().attributesOfItemAtPath(path)
+                        
+                        if let _attr = attr {
+                            print("FILE SIZE: ", NSByteCountFormatter.stringFromByteCount(Int64(_attr.fileSize()), countStyle: .File))
+                        }
                     }
                 } catch {
                     print("Error: \(error)")
