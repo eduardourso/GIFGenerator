@@ -56,4 +56,4 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 Eduardo Urso, eduardourso@gmail.com
 
 ### License
-GIFGeneraor is available under the MIT license. See the LICENSE file for more info.
+GIFGenerator is available under the MIT license. See the LICENSE file for more info.
