@@ -15,11 +15,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     let imageView = FLAnimatedImageView()
     let gifGenerator = GifGenerator()
     
-    //        let images:[UIImage] = [UIImage(named: "homer-simpson.jpg")!, UIImage(named: "homer-simpson2.jpg")!]
     let images2:[UIImage] = [UIImage(named: "bart1.jpg")!, UIImage(named: "bart2.jpg")!, UIImage(named: "bart3.jpg")!, UIImage(named: "bart4.jpg")!, UIImage(named: "bart5.jpg")!]
     
-    @IBAction func generateGif(sender: AnyObject) {
+    @IBAction func gifFromImages(sender: AnyObject) {
         self.generateAnimatedImage(images2)
+    }
+    
+    @IBAction func gifFromVideo(sender: AnyObject) {
+        self.generateAnimatedGifFromVideo()
     }
     
     override func viewDidLoad() {
@@ -38,6 +41,22 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             self.imageView.frame = CGRectMake(0, 0, image.size.width/2, image.size.height/2)
             self.imageView.center = self.view.center
         })
+    }
+    
+    func generateAnimatedGifFromVideo() {
+        
+        let documentsPath : String = NSSearchPathForDirectoriesInDomains(.DocumentDirectory,.UserDomainMask,true)[0]
+        let destinationPath :String = documentsPath.stringByAppendingString("/animated.gif")
+        
+        if let url = NSBundle(forClass: self.dynamicType).URLForResource("MYMOVIE", withExtension: "mp4"){
+            
+            gifGenerator.generateGifFromVideoURL(url, framesInterval: 10, frameDelay: 0.2, destinationURL: NSURL(fileURLWithPath: destinationPath), callback: { (data, error) -> () in
+                let image = FLAnimatedImage(animatedGIFData: data)
+                self.imageView.animatedImage = image
+                self.imageView.frame = CGRectMake(0, 0, image.size.width, image.size.height)
+                self.imageView.center = self.view.center
+            })
+        }
     }
 }
 
