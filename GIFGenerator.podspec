@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "GIFGenerator"
-  s.version          = "0.1.3"
+  s.version          = "0.2.0"
   s.summary          = "Generate animated GIF in iOS"
 
 # This description is used to generate tags and improve search results.
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
-                        Generates a GIF file and saves it to an specific URL
+                        Generates a GIF (from images and videos) file and saves it to an specific URL
                         - Set frame delays
                         - Set loop count
                        DESC

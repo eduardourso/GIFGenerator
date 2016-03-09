@@ -35,7 +35,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let documentsPath : String = NSSearchPathForDirectoriesInDomains(.DocumentDirectory,.UserDomainMask,true)[0]
         let destinationPath :String = documentsPath.stringByAppendingString("/animated.gif")
         
-        gifGenerator.generateGifFromImages(imageArray, frameDelay: 0.5, destinationURL: NSURL(fileURLWithPath: destinationPath), callback: { (data, error) -> () in
+        gifGenerator.generateGifFromImages(imagesArray: imageArray, frameDelay: 0.5, destinationURL: NSURL(fileURLWithPath: destinationPath), callback: { (data, error) -> () in
             let image = FLAnimatedImage(animatedGIFData: data)
             self.imageView.animatedImage = image
             self.imageView.frame = CGRectMake(0, 0, image.size.width/2, image.size.height/2)
@@ -48,14 +48,17 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let documentsPath : String = NSSearchPathForDirectoriesInDomains(.DocumentDirectory,.UserDomainMask,true)[0]
         let destinationPath :String = documentsPath.stringByAppendingString("/animated.gif")
         
-        if let url = NSBundle(forClass: self.dynamicType).URLForResource("MYMOVIE", withExtension: "mp4"){
+        if let url = NSBundle.mainBundle().URLForResource("myvideo", withExtension: "mp4"){
             
-            gifGenerator.generateGifFromVideoURL(url, framesInterval: 10, frameDelay: 0.2, destinationURL: NSURL(fileURLWithPath: destinationPath), callback: { (data, error) -> () in
-                let image = FLAnimatedImage(animatedGIFData: data)
-                self.imageView.animatedImage = image
-                self.imageView.frame = CGRectMake(0, 0, image.size.width, image.size.height)
-                self.imageView.center = self.view.center
+            gifGenerator.generateGifFromVideoURL(videoURL: url, framesInterval: 10, frameDelay: 0.2, destinationURL: NSURL(fileURLWithPath: destinationPath), callback: { (data, error) -> () in
+                if let image = FLAnimatedImage(animatedGIFData: data) {
+                    self.imageView.animatedImage = image
+                    self.imageView.frame = CGRectMake(0, 0, image.size.width, image.size.height)
+                    self.imageView.center = self.view.center
+                }
             })
+        } else {
+            print("file not found")
         }
     }
 }

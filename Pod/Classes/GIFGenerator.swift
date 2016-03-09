@@ -12,21 +12,21 @@ import AVFoundation
      Generate a GIF using a set of images
      You can specify the loop count and the delays between the frames.
      
-     :param: images an array of images
+     :param: imagesArray an array of images
      :param: repeatCount the repeat count, defaults to 0 which is infinity
      :param: frameDelay an delay in seconds between each frame
      :param: callback set a block that will get called when done, it'll return with data and error, both which can be nil
      */
-    public func generateGifFromImages(images:[UIImage], repeatCount: Int = 0, frameDelay: NSTimeInterval, destinationURL: NSURL, callback:(data: NSData?, error: NSError?) -> ()) {
+    public func generateGifFromImages(imagesArray imagesArray:[UIImage], repeatCount: Int = 0, frameDelay: NSTimeInterval, destinationURL: NSURL, callback:(data: NSData?, error: NSError?) -> ()) {
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0)) { () -> Void in
             
-            if let imageDestination = CGImageDestinationCreateWithURL(destinationURL, kUTTypeGIF, images.count, nil) {
+            if let imageDestination = CGImageDestinationCreateWithURL(destinationURL, kUTTypeGIF, imagesArray.count, nil) {
                 
                 let frameProperties:CFDictionaryRef = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFDelayTime as String: frameDelay]]
                 let gifProperties:CFDictionaryRef = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFLoopCount as String: repeatCount]]
                 
-                for image in images {
+                for image in imagesArray {
                     CGImageDestinationAddImage(imageDestination, image.CGImage!, frameProperties)
                 }
                 
@@ -55,12 +55,20 @@ import AVFoundation
         }
     }
     
-    
-    public func generateGifFromVideoURL(url:NSURL, repeatCount: Int = 0, framesInterval:Int, frameDelay: NSTimeInterval, destinationURL: NSURL, callback:(data: NSData?, error: NSError?) -> ()) {
+    /**
+     Generate a GIF using a set of video file (NSURL)
+     You can specify the loop count and the delays between the frames.
+     
+     :param: videoURL an url where you video file is stored
+     :param: repeatCount the repeat count, defaults to 0 which is infinity
+     :param: frameDelay an delay in seconds between each frame
+     :param: callback set a block that will get called when done, it'll return with data and error, both which can be nil
+     */
+    public func generateGifFromVideoURL(videoURL videoUrl:NSURL, repeatCount: Int = 0, framesInterval:Int, frameDelay: NSTimeInterval, destinationURL: NSURL, callback:(data: NSData?, error: NSError?) -> ()) {
         
-        self.generateFrames(url, framesInterval: framesInterval) { (images) -> () in
+        self.generateFrames(videoUrl, framesInterval: framesInterval) { (images) -> () in
             if let images = images {
-                self.generateGifFromImages(images, repeatCount: repeatCount, frameDelay: frameDelay, destinationURL: destinationURL, callback: { (data, error) -> () in
+                self.generateGifFromImages(imagesArray: images, repeatCount: repeatCount, frameDelay: frameDelay, destinationURL: destinationURL, callback: { (data, error) -> () in
                     self.cmTimeArray = []
                     self.framesArray = []
                     callback(data: data, error: error)
@@ -70,9 +78,8 @@ import AVFoundation
     }
     
     // MARK: THANKS TO: http://stackoverflow.com/questions/4001755/trying-to-understand-cmtime-and-cmtimemake
-    func generateFrames(url:NSURL, framesInterval:Int, callback:(images:[UIImage]?) -> ()) {
+   private func generateFrames(url:NSURL, framesInterval:Int, callback:(images:[UIImage]?) -> ()) {
         
-        //        self.generateCMTimesArrayOfAllFramesUsingAsset(AVURLAsset(URL: url))
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0)) { () -> Void in
             self.generateCMTimesArrayOfFramesUsingAsset(framesInterval, asset: AVURLAsset(URL: url))
             
@@ -107,7 +114,7 @@ import AVFoundation
         }
     }
     
-    func generateCMTimesArrayOfAllFramesUsingAsset(asset:AVURLAsset) {
+   private func generateCMTimesArrayOfAllFramesUsingAsset(asset:AVURLAsset) {
         if cmTimeArray.count > 0 {
             cmTimeArray.removeAll()
         }
@@ -119,7 +126,7 @@ import AVFoundation
         }
     }
     
-    func generateCMTimesArrayOfFramesUsingAsset(framesInterval:Int, asset:AVURLAsset) {
+    private func generateCMTimesArrayOfFramesUsingAsset(framesInterval:Int, asset:AVURLAsset) {
         
         let videoDuration = Int(ceilf((Float(Int(asset.duration.value)/Int(asset.duration.timescale)))))
         
