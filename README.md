@@ -69,7 +69,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ### Author
 Eduardo Urso, eduardourso@gmail.com
-\nIf you have any doubts, comments or improvements just shoot me an email.
+
+If you have any doubts, comments or improvements just shoot me an email.
 
 ### License
 GIFGenerator is available under the MIT license. See the LICENSE file for more info.
