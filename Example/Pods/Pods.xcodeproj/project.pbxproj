@@ -7,145 +7,90 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11C892C64133481BA69722E8BC9117B7 /* Pods-GIFGenerator_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C522C063E508ECC78FF7CC237C2514E5 /* Pods-GIFGenerator_Example-dummy.m */; };
 		1374EEC7E67FB73F9240545AC0D66ACA /* FLAnimatedImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 35E3CBF561083B15D5340186742940FA /* FLAnimatedImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0623AD1B08B6B83BC2F2DEDFB38EA3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A959725BF81B04B2A366D4C502AE1643 /* Foundation.framework */; };
+		1B16E0ED115496A4A70C8514FE1CBD79 /* GIFGenerator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB98FA955BD40197509B32794BC6921 /* GIFGenerator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B6DBB7D4EDF238AA2D89608A3F51C03 /* FLAnimatedImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EEBB7C19BDF9883802767400173CA0F4 /* FLAnimatedImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		23C38574DD71EE0FD5F9BB962528DD65 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DB9BC11B88D63B256C673DEC5E1DF7 /* CoreGraphics.framework */; };
-		25E1967A64EE442EA4935B385B52B1D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E5294576BD1BC9CE982B47126F4260 /* Foundation.framework */; };
-		2B27D34C3BEBBEEBD7B667FEC7C7CBDB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3495B48D62610363AE17C4AD780977C7 /* MobileCoreServices.framework */; };
-		49D634B07DCA57CC37FFE994F0984AAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E5294576BD1BC9CE982B47126F4260 /* Foundation.framework */; };
-		4D1B0753870EBA138B47D6CE1A249565 /* Pods-GIFGenerator_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B7050ACF570DD860CDF09037C89560 /* Pods-GIFGenerator_Tests-dummy.m */; };
-		5236193464208520E7B41901A0C4EE36 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6FFF24C795EA1D18193DAB41DDC9F5 /* ImageIO.framework */; };
-		694E9EF448880F6119C97B73454DAA91 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6FFF24C795EA1D18193DAB41DDC9F5 /* ImageIO.framework */; };
+		201C6C983B3CD1DE9D4FAC356A6107ED /* Pods-GIFGenerator_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D4845A0B22FA0A199D52B402137B6C18 /* Pods-GIFGenerator_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EEFBE0CACF9E05E254304E482D1E00B /* GIFGenerator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56303CAA43C043E1E0BA2E0B87EDD549 /* GIFGenerator-dummy.m */; };
+		64003B23882D24662A2A51C51475641A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A959725BF81B04B2A366D4C502AE1643 /* Foundation.framework */; };
 		793B3BC18A6BD80D99ACFBE8917F9F89 /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41769D9DA42D1DF62A1B76C948784AFA /* FLAnimatedImageView.m */; };
+		7BFAFDA985E72C3FA7A6318125F14B4D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4861CB6064E05284D109316F9191766 /* ImageIO.framework */; };
+		81C2F5F5E198091BA26B167C14637951 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ACF8940E0B3DB9A805624D494F3E9CF /* CoreGraphics.framework */; };
 		8AA9541169EFB247C2D8443006945E42 /* FLAnimatedImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8AB018CF4060AE52786BB4C116CCAD /* FLAnimatedImage-dummy.m */; };
-		8CB8624D6108143C45CBEDAD98F148DA /* Pods-GIFGenerator_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 77BFDB06C2FF35EC7ED422A7B98A34E8 /* Pods-GIFGenerator_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		902AADDCCC48381511DCF083CD9E20C6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE05200BE493FA733007A709E5AD2B07 /* QuartzCore.framework */; };
-		A0A3A684FA21D31FBE1422F8DBA19112 /* GIFGenerator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56303CAA43C043E1E0BA2E0B87EDD549 /* GIFGenerator-dummy.m */; };
-		A5DB5022AB1C1954EAAAB29D424752CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E5294576BD1BC9CE982B47126F4260 /* Foundation.framework */; };
+		94142ED32A3194A3CAA63B33E4385E77 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A38AD0ED15F694FCC082E1032D83112 /* MobileCoreServices.framework */; };
+		B3AC3B2A758C9054AA1D03D9060C5AEF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E6AC1340331A6E7DFDC4046D9B6F53 /* QuartzCore.framework */; };
 		B9238977DCF3ED4109DFCACD471AF8F9 /* FLAnimatedImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 98B458AAECB4FEAE42B4191ADC301ABD /* FLAnimatedImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD7AE7B859D42AE9E02DDFA47D823784 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A959725BF81B04B2A366D4C502AE1643 /* Foundation.framework */; };
 		C5B9CA1D7F1517B31E4C6970C8EC3DCF /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C891A474E30088C33750D4E23F5F09 /* FLAnimatedImage.m */; };
-		D97CEE958C0A6CB3D919B14B709FE95D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E5294576BD1BC9CE982B47126F4260 /* Foundation.framework */; };
-		DD1558ED4472666F6E20FEEFDF54D72A /* Pods-GIFGenerator_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E5FD6235A59166841FD2F86C37DDF8 /* Pods-GIFGenerator_Example-dummy.m */; };
-		E055004A3326A460152CED350A31B169 /* GIFGenerator.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AB000332574F567A5BE4027EB56B11A2 /* GIFGenerator.bundle */; };
-		EBD1AE55973072446548E198ABA1B33E /* GIFGenerator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB98FA955BD40197509B32794BC6921 /* GIFGenerator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EF2ED12F97ABA650F44EA1298BC0B3F3 /* GIFGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3423E5B61DF7A219E0C02017E7D7DF6C /* GIFGenerator.swift */; };
-		FA76FD74A3371E72E0CC8356BB0BC3EA /* Pods-GIFGenerator_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC8B8DDDBE9AFF44B43D244485D1F020 /* Pods-GIFGenerator_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FCB0F77C7778B80972A628569149E8A7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3495B48D62610363AE17C4AD780977C7 /* MobileCoreServices.framework */; };
+		CDCDFCB1966A63616663B1C09EDD2A12 /* GIFGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3423E5B61DF7A219E0C02017E7D7DF6C /* GIFGenerator.swift */; };
+		DC9D6BF4F46899829F02742E778E8D1A /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4861CB6064E05284D109316F9191766 /* ImageIO.framework */; };
+		F574053096872F6FE95E6EC170EF1770 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A38AD0ED15F694FCC082E1032D83112 /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6E7E75D22D8B4F352C16AB92653335F3 /* PBXContainerItemProxy */ = {
+		0B3B8D3F83DF0D7E2855D0830421C92C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA962190753CE3A22539F3D74721D275;
+			remoteInfo = GIFGenerator;
+		};
+		A4E1C14FC17AC15811B517F289F66111 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = FE113CEF81C16AA59EC049ACE130BCB2;
 			remoteInfo = FLAnimatedImage;
 		};
-		A30604486BABBEB3E9FDC9FD50F056B5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 06AFB079F8E9D2566BD16F70348B17A8;
-			remoteInfo = GIFGenerator;
-		};
-		A6CD3D34003AA057CF729E60A377102F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D961A794C39210F18709BD8EA368E471;
-			remoteInfo = "GIFGenerator-GIFGenerator";
-		};
-		DD6550A8CA99C598E1242B519BF348A0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 06AFB079F8E9D2566BD16F70348B17A8;
-			remoteInfo = GIFGenerator;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04B7050ACF570DD860CDF09037C89560 /* Pods-GIFGenerator_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GIFGenerator_Tests-dummy.m"; sourceTree = "<group>"; };
 		085B63D2F6591111447FEB1DB465940B /* FLAnimatedImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FLAnimatedImage.xcconfig; sourceTree = "<group>"; };
-		09E5294576BD1BC9CE982B47126F4260 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		1CC8C77F7511A9AA4ABF005A2C38D269 /* Pods-GIFGenerator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GIFGenerator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		230BE78A6181176A1AF0D3CA5D11B0F9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		23772859CB5DACCEDF0F884C681D6C6B /* Pods-GIFGenerator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GIFGenerator_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		1A38AD0ED15F694FCC082E1032D83112 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		2DA73A5BA3DCADC26F6D426AD8BB4512 /* Pods-GIFGenerator_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GIFGenerator_Example-resources.sh"; sourceTree = "<group>"; };
 		2E5C9EB318D1C1C474D197C82D8559FA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3423E5B61DF7A219E0C02017E7D7DF6C /* GIFGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GIFGenerator.swift; sourceTree = "<group>"; };
-		3447AF88514C1AAA017456E4A8C19607 /* Pods-GIFGenerator_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GIFGenerator_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		3495B48D62610363AE17C4AD780977C7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		35E3CBF561083B15D5340186742940FA /* FLAnimatedImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FLAnimatedImage-umbrella.h"; sourceTree = "<group>"; };
-		36173E29D7399619F1EAB3E8E6616E1F /* Pods-GIFGenerator_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GIFGenerator_Example-resources.sh"; sourceTree = "<group>"; };
 		41769D9DA42D1DF62A1B76C948784AFA /* FLAnimatedImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLAnimatedImageView.m; path = FLAnimatedImage/FLAnimatedImageView.m; sourceTree = "<group>"; };
-		4345EA7067A77A99A1B7DD29B5A06C44 /* Pods-GIFGenerator_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GIFGenerator_Tests.modulemap"; sourceTree = "<group>"; };
-		4D26C5B75E2BEAA8B06243A5B71A9B2B /* Pods-GIFGenerator_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GIFGenerator_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4E6E4F65792270F7B0B4D9DB8BFB1953 /* Pods-GIFGenerator_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GIFGenerator_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		5278246522B4AB10285F33E02C6CB3F2 /* Pods-GIFGenerator_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GIFGenerator_Tests-resources.sh"; sourceTree = "<group>"; };
 		56303CAA43C043E1E0BA2E0B87EDD549 /* GIFGenerator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GIFGenerator-dummy.m"; sourceTree = "<group>"; };
+		5E3B99BE57AD6F4E9756D9EB0B5165B6 /* Pods-GIFGenerator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GIFGenerator_Example.release.xcconfig"; sourceTree = "<group>"; };
+		658E8D4A07BE6819DA99D1ADFC8BC74C /* FLAnimatedImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FLAnimatedImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		682FCBE3D34868AD7C587C98494FFAD3 /* Pods-GIFGenerator_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GIFGenerator_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		6ACF8940E0B3DB9A805624D494F3E9CF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		6F6E610704D2C0A1E36264E6DCAFEDAF /* GIFGenerator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GIFGenerator.modulemap; sourceTree = "<group>"; };
-		77BFDB06C2FF35EC7ED422A7B98A34E8 /* Pods-GIFGenerator_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GIFGenerator_Example-umbrella.h"; sourceTree = "<group>"; };
 		7BA5AD91FAA0F10C905D801EE5DC0FB5 /* GIFGenerator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GIFGenerator-prefix.pch"; sourceTree = "<group>"; };
-		81C6A80D05B787A3265EFB157D3DD5E2 /* Pods-GIFGenerator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GIFGenerator_Example.release.xcconfig"; sourceTree = "<group>"; };
 		82BABE473D1F9F3DEECA49608D9750F3 /* FLAnimatedImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FLAnimatedImage-prefix.pch"; sourceTree = "<group>"; };
-		82F73ACF51489EEE5F210B39A7A979FA /* FLAnimatedImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FLAnimatedImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B9CE57FDB12D704502F47EA2342A354 /* Pods-GIFGenerator_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GIFGenerator_Example.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93C891A474E30088C33750D4E23F5F09 /* FLAnimatedImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLAnimatedImage.m; path = FLAnimatedImage/FLAnimatedImage.m; sourceTree = "<group>"; };
-		941F260D46E95995ABA8B5AAB9CC2513 /* Pods_GIFGenerator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GIFGenerator_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95CAE3E8811264B453F72F35E061C680 /* Pods-GIFGenerator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GIFGenerator_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		95D9641171B0278FB999DF5A2914A802 /* GIFGenerator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GIFGenerator.xcconfig; sourceTree = "<group>"; };
 		98B458AAECB4FEAE42B4191ADC301ABD /* FLAnimatedImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLAnimatedImage.h; path = FLAnimatedImage/FLAnimatedImage.h; sourceTree = "<group>"; };
-		9C9AE2403498FBCD30AA2276ADEF53A4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D6FFF24C795EA1D18193DAB41DDC9F5 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
-		A95DBD663CEFFF715CCE7BC2FDF9E428 /* Pods-GIFGenerator_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GIFGenerator_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		AB000332574F567A5BE4027EB56B11A2 /* GIFGenerator.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GIFGenerator.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC8B8DDDBE9AFF44B43D244485D1F020 /* Pods-GIFGenerator_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GIFGenerator_Tests-umbrella.h"; sourceTree = "<group>"; };
+		A959725BF81B04B2A366D4C502AE1643 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		AF97F9F9FB5F4852DC308EE979C18C9B /* FLAnimatedImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FLAnimatedImage.modulemap; sourceTree = "<group>"; };
-		B89508EDA48744C276ED7746705259F1 /* Pods-GIFGenerator_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GIFGenerator_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BA8C51BF0287039011A75361AD998301 /* Pods_GIFGenerator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GIFGenerator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3E6AC1340331A6E7DFDC4046D9B6F53 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		B6313CF95E2853F47BE14C926D81A18D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEB98FA955BD40197509B32794BC6921 /* GIFGenerator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GIFGenerator-umbrella.h"; sourceTree = "<group>"; };
 		BF5ADBD10E35DA5611E8174764CD89B8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0E5FD6235A59166841FD2F86C37DDF8 /* Pods-GIFGenerator_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GIFGenerator_Example-dummy.m"; sourceTree = "<group>"; };
-		DA81C53B1E46138570E7CF34F28D955A /* Pods-GIFGenerator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GIFGenerator_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		E1B8A0FD39AC8B27EBF21BAB33C40804 /* GIFGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GIFGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C25B3FE2A50A7B1712C6400D797A0964 /* Pods_GIFGenerator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GIFGenerator_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4861CB6064E05284D109316F9191766 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		C522C063E508ECC78FF7CC237C2514E5 /* Pods-GIFGenerator_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GIFGenerator_Example-dummy.m"; sourceTree = "<group>"; };
+		C755E60353C80410385067071416F402 /* Pods-GIFGenerator_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GIFGenerator_Example-frameworks.sh"; sourceTree = "<group>"; };
+		D4845A0B22FA0A199D52B402137B6C18 /* Pods-GIFGenerator_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GIFGenerator_Example-umbrella.h"; sourceTree = "<group>"; };
+		DDE652E7C68B01418FE356773845D77D /* Pods-GIFGenerator_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GIFGenerator_Example.modulemap"; sourceTree = "<group>"; };
 		EB8AB018CF4060AE52786BB4C116CCAD /* FLAnimatedImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FLAnimatedImage-dummy.m"; sourceTree = "<group>"; };
-		EE05200BE493FA733007A709E5AD2B07 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		EEBB7C19BDF9883802767400173CA0F4 /* FLAnimatedImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLAnimatedImageView.h; path = FLAnimatedImage/FLAnimatedImageView.h; sourceTree = "<group>"; };
-		F2DB9BC11B88D63B256C673DEC5E1DF7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		FB7559790DEE9D2BA20D6AF2D7031E6A /* Pods-GIFGenerator_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GIFGenerator_Example-frameworks.sh"; sourceTree = "<group>"; };
+		F29B941DB301751D27358626148D5973 /* Pods-GIFGenerator_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GIFGenerator_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FE9E00491C7232BD83A27336746CDAE3 /* GIFGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GIFGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5E7CB870642241CB7D291BF156503D51 /* Frameworks */ = {
+		0D4C092DD3A927EFA9408BE376E108A2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		731284E53BD77DDFE0BB3AEA473E3FAF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				49D634B07DCA57CC37FFE994F0984AAE /* Foundation.framework in Frameworks */,
-				5236193464208520E7B41901A0C4EE36 /* ImageIO.framework in Frameworks */,
-				2B27D34C3BEBBEEBD7B667FEC7C7CBDB /* MobileCoreServices.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8C5ED4D32F7720A3F331DBEC221792D2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A5DB5022AB1C1954EAAAB29D424752CB /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E0C3248ED22914F79B9DBA48028CE607 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D97CEE958C0A6CB3D919B14B709FE95D /* Foundation.framework in Frameworks */,
+				1A0623AD1B08B6B83BC2F2DEDFB38EA3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,41 +98,63 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23C38574DD71EE0FD5F9BB962528DD65 /* CoreGraphics.framework in Frameworks */,
-				25E1967A64EE442EA4935B385B52B1D2 /* Foundation.framework in Frameworks */,
-				694E9EF448880F6119C97B73454DAA91 /* ImageIO.framework in Frameworks */,
-				FCB0F77C7778B80972A628569149E8A7 /* MobileCoreServices.framework in Frameworks */,
-				902AADDCCC48381511DCF083CD9E20C6 /* QuartzCore.framework in Frameworks */,
+				81C2F5F5E198091BA26B167C14637951 /* CoreGraphics.framework in Frameworks */,
+				BD7AE7B859D42AE9E02DDFA47D823784 /* Foundation.framework in Frameworks */,
+				DC9D6BF4F46899829F02742E778E8D1A /* ImageIO.framework in Frameworks */,
+				94142ED32A3194A3CAA63B33E4385E77 /* MobileCoreServices.framework in Frameworks */,
+				B3AC3B2A758C9054AA1D03D9060C5AEF /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F48DC3FB864B6E2545198EE44F348701 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64003B23882D24662A2A51C51475641A /* Foundation.framework in Frameworks */,
+				7BFAFDA985E72C3FA7A6318125F14B4D /* ImageIO.framework in Frameworks */,
+				F574053096872F6FE95E6EC170EF1770 /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
+		13EC5569233716F3FA74D6376EF467AD /* Pods-GIFGenerator_Example */ = {
 			isa = PBXGroup;
 			children = (
-				8A0D2E4458CB87D128AC420E9C9A5AE1 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2F593264CF5D7A3491AB05585A61EC0A /* Pods-GIFGenerator_Example */ = {
-			isa = PBXGroup;
-			children = (
-				230BE78A6181176A1AF0D3CA5D11B0F9 /* Info.plist */,
-				8B9CE57FDB12D704502F47EA2342A354 /* Pods-GIFGenerator_Example.modulemap */,
-				B89508EDA48744C276ED7746705259F1 /* Pods-GIFGenerator_Example-acknowledgements.markdown */,
-				A95DBD663CEFFF715CCE7BC2FDF9E428 /* Pods-GIFGenerator_Example-acknowledgements.plist */,
-				C0E5FD6235A59166841FD2F86C37DDF8 /* Pods-GIFGenerator_Example-dummy.m */,
-				FB7559790DEE9D2BA20D6AF2D7031E6A /* Pods-GIFGenerator_Example-frameworks.sh */,
-				36173E29D7399619F1EAB3E8E6616E1F /* Pods-GIFGenerator_Example-resources.sh */,
-				77BFDB06C2FF35EC7ED422A7B98A34E8 /* Pods-GIFGenerator_Example-umbrella.h */,
-				DA81C53B1E46138570E7CF34F28D955A /* Pods-GIFGenerator_Example.debug.xcconfig */,
-				81C6A80D05B787A3265EFB157D3DD5E2 /* Pods-GIFGenerator_Example.release.xcconfig */,
+				B6313CF95E2853F47BE14C926D81A18D /* Info.plist */,
+				DDE652E7C68B01418FE356773845D77D /* Pods-GIFGenerator_Example.modulemap */,
+				F29B941DB301751D27358626148D5973 /* Pods-GIFGenerator_Example-acknowledgements.markdown */,
+				682FCBE3D34868AD7C587C98494FFAD3 /* Pods-GIFGenerator_Example-acknowledgements.plist */,
+				C522C063E508ECC78FF7CC237C2514E5 /* Pods-GIFGenerator_Example-dummy.m */,
+				C755E60353C80410385067071416F402 /* Pods-GIFGenerator_Example-frameworks.sh */,
+				2DA73A5BA3DCADC26F6D426AD8BB4512 /* Pods-GIFGenerator_Example-resources.sh */,
+				D4845A0B22FA0A199D52B402137B6C18 /* Pods-GIFGenerator_Example-umbrella.h */,
+				95CAE3E8811264B453F72F35E061C680 /* Pods-GIFGenerator_Example.debug.xcconfig */,
+				5E3B99BE57AD6F4E9756D9EB0B5165B6 /* Pods-GIFGenerator_Example.release.xcconfig */,
 			);
 			name = "Pods-GIFGenerator_Example";
 			path = "Target Support Files/Pods-GIFGenerator_Example";
+			sourceTree = "<group>";
+		};
+		183A7F2E522E2B4768789E43404B6707 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6ACF8940E0B3DB9A805624D494F3E9CF /* CoreGraphics.framework */,
+				A959725BF81B04B2A366D4C502AE1643 /* Foundation.framework */,
+				C4861CB6064E05284D109316F9191766 /* ImageIO.framework */,
+				1A38AD0ED15F694FCC082E1032D83112 /* MobileCoreServices.framework */,
+				B3E6AC1340331A6E7DFDC4046D9B6F53 /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				183A7F2E522E2B4768789E43404B6707 /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		521D6EC6B9CBB21BB12F40469D1EE059 /* Support Files */ = {
@@ -220,58 +187,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		78B9DB2DEC7194ACC68EFFE0E8342E25 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				82F73ACF51489EEE5F210B39A7A979FA /* FLAnimatedImage.framework */,
-				AB000332574F567A5BE4027EB56B11A2 /* GIFGenerator.bundle */,
-				E1B8A0FD39AC8B27EBF21BAB33C40804 /* GIFGenerator.framework */,
-				941F260D46E95995ABA8B5AAB9CC2513 /* Pods_GIFGenerator_Example.framework */,
-				BA8C51BF0287039011A75361AD998301 /* Pods_GIFGenerator_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				53580EAB5B162A5DAC251F8E97D72373 /* Development Pods */,
 				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
 				56738C3A6535F8705497A3B4ACCE6BA2 /* Pods */,
-				78B9DB2DEC7194ACC68EFFE0E8342E25 /* Products */,
-				C3B21036AFDBFCBD8C68CEA81A3BBAFC /* Targets Support Files */,
+				F2ECE28FB3CA6E6D1E59CDF40D3F2FD8 /* Products */,
+				C1C65A9957A4A576B0B4CE40B59114E6 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		802CF9E5B3A799F8F1A8E2E9DD4BAFB8 /* Pods-GIFGenerator_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				9C9AE2403498FBCD30AA2276ADEF53A4 /* Info.plist */,
-				4345EA7067A77A99A1B7DD29B5A06C44 /* Pods-GIFGenerator_Tests.modulemap */,
-				4D26C5B75E2BEAA8B06243A5B71A9B2B /* Pods-GIFGenerator_Tests-acknowledgements.markdown */,
-				3447AF88514C1AAA017456E4A8C19607 /* Pods-GIFGenerator_Tests-acknowledgements.plist */,
-				04B7050ACF570DD860CDF09037C89560 /* Pods-GIFGenerator_Tests-dummy.m */,
-				4E6E4F65792270F7B0B4D9DB8BFB1953 /* Pods-GIFGenerator_Tests-frameworks.sh */,
-				5278246522B4AB10285F33E02C6CB3F2 /* Pods-GIFGenerator_Tests-resources.sh */,
-				AC8B8DDDBE9AFF44B43D244485D1F020 /* Pods-GIFGenerator_Tests-umbrella.h */,
-				1CC8C77F7511A9AA4ABF005A2C38D269 /* Pods-GIFGenerator_Tests.debug.xcconfig */,
-				23772859CB5DACCEDF0F884C681D6C6B /* Pods-GIFGenerator_Tests.release.xcconfig */,
-			);
-			name = "Pods-GIFGenerator_Tests";
-			path = "Target Support Files/Pods-GIFGenerator_Tests";
-			sourceTree = "<group>";
-		};
-		8A0D2E4458CB87D128AC420E9C9A5AE1 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				F2DB9BC11B88D63B256C673DEC5E1DF7 /* CoreGraphics.framework */,
-				09E5294576BD1BC9CE982B47126F4260 /* Foundation.framework */,
-				9D6FFF24C795EA1D18193DAB41DDC9F5 /* ImageIO.framework */,
-				3495B48D62610363AE17C4AD780977C7 /* MobileCoreServices.framework */,
-				EE05200BE493FA733007A709E5AD2B07 /* QuartzCore.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		A035BABCFA51A8A0A05628964347F747 /* FLAnimatedImage */ = {
@@ -304,11 +229,10 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		C3B21036AFDBFCBD8C68CEA81A3BBAFC /* Targets Support Files */ = {
+		C1C65A9957A4A576B0B4CE40B59114E6 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2F593264CF5D7A3491AB05585A61EC0A /* Pods-GIFGenerator_Example */,
-				802CF9E5B3A799F8F1A8E2E9DD4BAFB8 /* Pods-GIFGenerator_Tests */,
+				13EC5569233716F3FA74D6376EF467AD /* Pods-GIFGenerator_Example */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -335,9 +259,27 @@
 			path = "../Target Support Files/FLAnimatedImage";
 			sourceTree = "<group>";
 		};
+		F2ECE28FB3CA6E6D1E59CDF40D3F2FD8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				658E8D4A07BE6819DA99D1ADFC8BC74C /* FLAnimatedImage.framework */,
+				FE9E00491C7232BD83A27336746CDAE3 /* GIFGenerator.framework */,
+				C25B3FE2A50A7B1712C6400D797A0964 /* Pods_GIFGenerator_Example.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		035D997914B19CD75BB9722CDE5A2ABD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				201C6C983B3CD1DE9D4FAC356A6107ED /* Pods-GIFGenerator_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0F53437C86350F7BE134DC397F3E0C67 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -348,105 +290,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5AA68560B1D032D4F7C73609AE31D340 /* Headers */ = {
+		DAED197727D2D7DD74E373F6657D58DC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CB8624D6108143C45CBEDAD98F148DA /* Pods-GIFGenerator_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		78E249D673850FC4C0DAEB064AF45A10 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FA76FD74A3371E72E0CC8356BB0BC3EA /* Pods-GIFGenerator_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D3731F68473D27FE9A1D06CCFC4E94E3 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EBD1AE55973072446548E198ABA1B33E /* GIFGenerator-umbrella.h in Headers */,
+				1B16E0ED115496A4A70C8514FE1CBD79 /* GIFGenerator-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		02DE10E6F0E7528E8848E89266A882FF /* Pods-GIFGenerator_Example */ = {
+		CA962190753CE3A22539F3D74721D275 /* GIFGenerator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FCC23670DEE35D703FEF66EE810814B0 /* Build configuration list for PBXNativeTarget "Pods-GIFGenerator_Example" */;
+			buildConfigurationList = 1D04B7259A13D2E5B55677EE6A8249D1 /* Build configuration list for PBXNativeTarget "GIFGenerator" */;
 			buildPhases = (
-				6242AF58C8223F0555F4257D14855DE0 /* Sources */,
-				E0C3248ED22914F79B9DBA48028CE607 /* Frameworks */,
-				5AA68560B1D032D4F7C73609AE31D340 /* Headers */,
+				375A50A1B8BCBD33CE182C46732238F4 /* Sources */,
+				F48DC3FB864B6E2545198EE44F348701 /* Frameworks */,
+				DAED197727D2D7DD74E373F6657D58DC /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B8747B011F48BF8665C167B29669168E /* PBXTargetDependency */,
-				45CB4125A2B821CB44EFFCFCCE15F7CB /* PBXTargetDependency */,
-			);
-			name = "Pods-GIFGenerator_Example";
-			productName = "Pods-GIFGenerator_Example";
-			productReference = 941F260D46E95995ABA8B5AAB9CC2513 /* Pods_GIFGenerator_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		06AFB079F8E9D2566BD16F70348B17A8 /* GIFGenerator */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A694661BAAFC7F2CFD253AEC0A8D078B /* Build configuration list for PBXNativeTarget "GIFGenerator" */;
-			buildPhases = (
-				33F01DA05BE20D81F0167417E9327841 /* Sources */,
-				731284E53BD77DDFE0BB3AEA473E3FAF /* Frameworks */,
-				C980FC53E62A1BD9E065B03BA41C1E65 /* Resources */,
-				D3731F68473D27FE9A1D06CCFC4E94E3 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				84B4726CCBF7454016102D9BB636A35C /* PBXTargetDependency */,
 			);
 			name = GIFGenerator;
 			productName = GIFGenerator;
-			productReference = E1B8A0FD39AC8B27EBF21BAB33C40804 /* GIFGenerator.framework */;
+			productReference = FE9E00491C7232BD83A27336746CDAE3 /* GIFGenerator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9DF64EA0C96923CBCB1B6547D7781170 /* Pods-GIFGenerator_Tests */ = {
+		CB6C6C9EF3450027127F60318828036F /* Pods-GIFGenerator_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FE8EAFC9C9183259DC9D599BBCFBA9DD /* Build configuration list for PBXNativeTarget "Pods-GIFGenerator_Tests" */;
+			buildConfigurationList = B7587DFEAB2194537931E31B3755C633 /* Build configuration list for PBXNativeTarget "Pods-GIFGenerator_Example" */;
 			buildPhases = (
-				7C7CBFF686C02AA9291DAF1370D18100 /* Sources */,
-				8C5ED4D32F7720A3F331DBEC221792D2 /* Frameworks */,
-				78E249D673850FC4C0DAEB064AF45A10 /* Headers */,
+				4B96CA915E210D97D9E4D65498C107BB /* Sources */,
+				0D4C092DD3A927EFA9408BE376E108A2 /* Frameworks */,
+				035D997914B19CD75BB9722CDE5A2ABD /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CB10BB71CCB3D07057193421C14A56D2 /* PBXTargetDependency */,
+				4AC36AED06BD0254DA76A87DD0C4951D /* PBXTargetDependency */,
+				954B69066EB118F394C36787E9BBDF51 /* PBXTargetDependency */,
 			);
-			name = "Pods-GIFGenerator_Tests";
-			productName = "Pods-GIFGenerator_Tests";
-			productReference = BA8C51BF0287039011A75361AD998301 /* Pods_GIFGenerator_Tests.framework */;
+			name = "Pods-GIFGenerator_Example";
+			productName = "Pods-GIFGenerator_Example";
+			productReference = C25B3FE2A50A7B1712C6400D797A0964 /* Pods_GIFGenerator_Example.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		D961A794C39210F18709BD8EA368E471 /* GIFGenerator-GIFGenerator */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D475920B8AC1E30D4A944F83D24276C3 /* Build configuration list for PBXNativeTarget "GIFGenerator-GIFGenerator" */;
-			buildPhases = (
-				753E1821904B74DE0B4EF911BF4CA671 /* Sources */,
-				5E7CB870642241CB7D291BF156503D51 /* Frameworks */,
-				413AA8B4A10FAAAE2856173E756FD889 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "GIFGenerator-GIFGenerator";
-			productName = "GIFGenerator-GIFGenerator";
-			productReference = AB000332574F567A5BE4027EB56B11A2 /* GIFGenerator.bundle */;
-			productType = "com.apple.product-type.bundle";
 		};
 		FE113CEF81C16AA59EC049ACE130BCB2 /* FLAnimatedImage */ = {
 			isa = PBXNativeTarget;
@@ -462,7 +351,7 @@
 			);
 			name = FLAnimatedImage;
 			productName = FLAnimatedImage;
-			productReference = 82F73ACF51489EEE5F210B39A7A979FA /* FLAnimatedImage.framework */;
+			productReference = 658E8D4A07BE6819DA99D1ADFC8BC74C /* FLAnimatedImage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -471,13 +360,8 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0800;
-				TargetAttributes = {
-					06AFB079F8E9D2566BD16F70348B17A8 = {
-						LastSwiftMigration = 0800;
-					};
-				};
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -487,67 +371,32 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 78B9DB2DEC7194ACC68EFFE0E8342E25 /* Products */;
+			productRefGroup = F2ECE28FB3CA6E6D1E59CDF40D3F2FD8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				FE113CEF81C16AA59EC049ACE130BCB2 /* FLAnimatedImage */,
-				06AFB079F8E9D2566BD16F70348B17A8 /* GIFGenerator */,
-				D961A794C39210F18709BD8EA368E471 /* GIFGenerator-GIFGenerator */,
-				02DE10E6F0E7528E8848E89266A882FF /* Pods-GIFGenerator_Example */,
-				9DF64EA0C96923CBCB1B6547D7781170 /* Pods-GIFGenerator_Tests */,
+				CA962190753CE3A22539F3D74721D275 /* GIFGenerator */,
+				CB6C6C9EF3450027127F60318828036F /* Pods-GIFGenerator_Example */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		413AA8B4A10FAAAE2856173E756FD889 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C980FC53E62A1BD9E065B03BA41C1E65 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E055004A3326A460152CED350A31B169 /* GIFGenerator.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		33F01DA05BE20D81F0167417E9327841 /* Sources */ = {
+		375A50A1B8BCBD33CE182C46732238F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0A3A684FA21D31FBE1422F8DBA19112 /* GIFGenerator-dummy.m in Sources */,
-				EF2ED12F97ABA650F44EA1298BC0B3F3 /* GIFGenerator.swift in Sources */,
+				4EEFBE0CACF9E05E254304E482D1E00B /* GIFGenerator-dummy.m in Sources */,
+				CDCDFCB1966A63616663B1C09EDD2A12 /* GIFGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6242AF58C8223F0555F4257D14855DE0 /* Sources */ = {
+		4B96CA915E210D97D9E4D65498C107BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD1558ED4472666F6E20FEEFDF54D72A /* Pods-GIFGenerator_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		753E1821904B74DE0B4EF911BF4CA671 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7C7CBFF686C02AA9291DAF1370D18100 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4D1B0753870EBA138B47D6CE1A249565 /* Pods-GIFGenerator_Tests-dummy.m in Sources */,
+				11C892C64133481BA69722E8BC9117B7 /* Pods-GIFGenerator_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,152 +413,75 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		45CB4125A2B821CB44EFFCFCCE15F7CB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GIFGenerator;
-			target = 06AFB079F8E9D2566BD16F70348B17A8 /* GIFGenerator */;
-			targetProxy = A30604486BABBEB3E9FDC9FD50F056B5 /* PBXContainerItemProxy */;
-		};
-		84B4726CCBF7454016102D9BB636A35C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "GIFGenerator-GIFGenerator";
-			target = D961A794C39210F18709BD8EA368E471 /* GIFGenerator-GIFGenerator */;
-			targetProxy = A6CD3D34003AA057CF729E60A377102F /* PBXContainerItemProxy */;
-		};
-		B8747B011F48BF8665C167B29669168E /* PBXTargetDependency */ = {
+		4AC36AED06BD0254DA76A87DD0C4951D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FLAnimatedImage;
 			target = FE113CEF81C16AA59EC049ACE130BCB2 /* FLAnimatedImage */;
-			targetProxy = 6E7E75D22D8B4F352C16AB92653335F3 /* PBXContainerItemProxy */;
+			targetProxy = A4E1C14FC17AC15811B517F289F66111 /* PBXContainerItemProxy */;
 		};
-		CB10BB71CCB3D07057193421C14A56D2 /* PBXTargetDependency */ = {
+		954B69066EB118F394C36787E9BBDF51 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GIFGenerator;
-			target = 06AFB079F8E9D2566BD16F70348B17A8 /* GIFGenerator */;
-			targetProxy = DD6550A8CA99C598E1242B519BF348A0 /* PBXContainerItemProxy */;
+			target = CA962190753CE3A22539F3D74721D275 /* GIFGenerator */;
+			targetProxy = 0B3B8D3F83DF0D7E2855D0830421C92C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0E96E5492911A76BF0A26619A7612663 /* Debug */ = {
+		00B9398ED28D6EE7A4E9DAE0B40EE73B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 085B63D2F6591111447FEB1DB465940B /* FLAnimatedImage.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/FLAnimatedImage/FLAnimatedImage-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/FLAnimatedImage/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/FLAnimatedImage/FLAnimatedImage.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = FLAnimatedImage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		419D23500296CE1BA567506A6044B17C /* Debug */ = {
+		3836D8B7349BCC2602626E942DB1DCE9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1CC8C77F7511A9AA4ABF005A2C38D269 /* Pods-GIFGenerator_Tests.debug.xcconfig */;
+			baseConfigurationReference = 5E3B99BE57AD6F4E9756D9EB0B5165B6 /* Pods-GIFGenerator_Example.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-GIFGenerator_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GIFGenerator_Tests/Pods-GIFGenerator_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_GIFGenerator_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		55118440108E8F875AFD2640654F6FB9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA81C53B1E46138570E7CF34F28D955A /* Pods-GIFGenerator_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-GIFGenerator_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GIFGenerator_Example/Pods-GIFGenerator_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -717,17 +489,17 @@
 				PRODUCT_NAME = Pods_GIFGenerator_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -737,20 +509,58 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
@@ -763,30 +573,34 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		6CECB412D29E89CAA53F9EBBC6657971 /* Release */ = {
+		B2DAA81BE67DAC92CE3EAA99F56158FC /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 95D9641171B0278FB999DF5A2914A802 /* GIFGenerator.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/GIFGenerator/GIFGenerator-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/GIFGenerator/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/GIFGenerator/GIFGenerator.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = GIFGenerator;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -797,85 +611,60 @@
 			};
 			name = Release;
 		};
-		701A1E35510E3260FDD7653133F05E2A /* Release */ = {
+		D829E19339E398DB6E2B750F2E255404 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 085B63D2F6591111447FEB1DB465940B /* FLAnimatedImage.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/FLAnimatedImage/FLAnimatedImage-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/FLAnimatedImage/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/FLAnimatedImage/FLAnimatedImage.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = FLAnimatedImage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		7FFF7B360E58F07FE2C3A6C004560B19 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81C6A80D05B787A3265EFB157D3DD5E2 /* Pods-GIFGenerator_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-GIFGenerator_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GIFGenerator_Example/Pods-GIFGenerator_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_GIFGenerator_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		806082AEC4D88778FBCE4D2A948A3A38 /* Debug */ = {
+		F79962C5643335389FC014056B57748E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 95D9641171B0278FB999DF5A2914A802 /* GIFGenerator.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/GIFGenerator/GIFGenerator-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/GIFGenerator/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/GIFGenerator/GIFGenerator.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = GIFGenerator;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -887,70 +676,59 @@
 			};
 			name = Debug;
 		};
-		950E7B6CB7C1921DF455E2F0166B823C /* Release */ = {
+		FCB3ED0F2843CD95DD8A1532EDF036ED /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23772859CB5DACCEDF0F884C681D6C6B /* Pods-GIFGenerator_Tests.release.xcconfig */;
+			baseConfigurationReference = 95CAE3E8811264B453F72F35E061C680 /* Pods-GIFGenerator_Example.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-GIFGenerator_Tests/Info.plist";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GIFGenerator_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GIFGenerator_Tests/Pods-GIFGenerator_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MODULEMAP_FILE = "Target Support Files/Pods-GIFGenerator_Example/Pods-GIFGenerator_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_GIFGenerator_Tests;
+				PRODUCT_NAME = Pods_GIFGenerator_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
-		};
-		E69B71CB79B1E34A53B1C34465F18367 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95D9641171B0278FB999DF5A2914A802 /* GIFGenerator.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = GIFGenerator;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
 			name = Debug;
-		};
-		E72AD1EC51ECD89B14F0C3352B335C0E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95D9641171B0278FB999DF5A2914A802 /* GIFGenerator.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = GIFGenerator;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1D04B7259A13D2E5B55677EE6A8249D1 /* Build configuration list for PBXNativeTarget "GIFGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F79962C5643335389FC014056B57748E /* Debug */,
+				B2DAA81BE67DAC92CE3EAA99F56158FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
-				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
+				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -958,44 +736,17 @@
 		3E4AFDEDCC47C4415CB9B5B395C41321 /* Build configuration list for PBXNativeTarget "FLAnimatedImage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0E96E5492911A76BF0A26619A7612663 /* Debug */,
-				701A1E35510E3260FDD7653133F05E2A /* Release */,
+				D829E19339E398DB6E2B750F2E255404 /* Debug */,
+				00B9398ED28D6EE7A4E9DAE0B40EE73B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A694661BAAFC7F2CFD253AEC0A8D078B /* Build configuration list for PBXNativeTarget "GIFGenerator" */ = {
+		B7587DFEAB2194537931E31B3755C633 /* Build configuration list for PBXNativeTarget "Pods-GIFGenerator_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				806082AEC4D88778FBCE4D2A948A3A38 /* Debug */,
-				6CECB412D29E89CAA53F9EBBC6657971 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D475920B8AC1E30D4A944F83D24276C3 /* Build configuration list for PBXNativeTarget "GIFGenerator-GIFGenerator" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E69B71CB79B1E34A53B1C34465F18367 /* Debug */,
-				E72AD1EC51ECD89B14F0C3352B335C0E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FCC23670DEE35D703FEF66EE810814B0 /* Build configuration list for PBXNativeTarget "Pods-GIFGenerator_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				55118440108E8F875AFD2640654F6FB9 /* Debug */,
-				7FFF7B360E58F07FE2C3A6C004560B19 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FE8EAFC9C9183259DC9D599BBCFBA9DD /* Build configuration list for PBXNativeTarget "Pods-GIFGenerator_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				419D23500296CE1BA567506A6044B17C /* Debug */,
-				950E7B6CB7C1921DF455E2F0166B823C /* Release */,
+				FCB3ED0F2843CD95DD8A1532EDF036ED /* Debug */,
+				3836D8B7349BCC2602626E942DB1DCE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
