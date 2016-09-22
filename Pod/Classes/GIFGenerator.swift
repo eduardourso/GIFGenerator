@@ -19,12 +19,12 @@ import AVFoundation
      */
     open func generateGifFromImages(imagesArray:[UIImage], repeatCount: Int = 0, frameDelay: TimeInterval, destinationURL: URL, callback:@escaping (_ data: Data?, _ error: NSError?) -> ()) {
         
-        DispatchQueue.global(priority: DispatchQueue.GlobalQueuePriority.background).async { () -> Void in
+        DispatchQueue.global(qos: DispatchQoS.QoSClass.background).async { () -> Void in
             
             if let imageDestination = CGImageDestinationCreateWithURL(destinationURL as CFURL, kUTTypeGIF, imagesArray.count, nil) {
                 
-                let frameProperties:CFDictionary = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFDelayTime as String: frameDelay]]
-                let gifProperties:CFDictionary = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFLoopCount as String: repeatCount]]
+                let frameProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFDelayTime as String: frameDelay]] as CFDictionary
+                let gifProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFLoopCount as String: repeatCount]] as CFDictionary
                 
                 for image in imagesArray {
                     CGImageDestinationAddImage(imageDestination, image.cgImage!, frameProperties)
@@ -36,12 +36,10 @@ import AVFoundation
                     print("animated GIF file created at ", destinationURL)
                     
                     do {
-                        if let path = destinationURL.path {
-                            let attr : NSDictionary? = try FileManager.default.attributesOfItem(atPath: path)
-                            
-                            if let _attr = attr {
-                                print("FILE SIZE: ", ByteCountFormatter.string(fromByteCount: Int64(_attr.fileSize()), countStyle: .file))
-                            }
+                        let attr = try FileManager.default.attributesOfItem(atPath: destinationURL.path) as NSDictionary?
+                        
+                        if let _attr = attr {
+                            print("FILE SIZE: ", ByteCountFormatter.string(fromByteCount: Int64(_attr.fileSize()), countStyle: .file))
                         }
                     } catch {
                         print("Error: \(error)")
@@ -80,11 +78,11 @@ import AVFoundation
     // MARK: THANKS TO: http://stackoverflow.com/questions/4001755/trying-to-understand-cmtime-and-cmtimemake
    fileprivate func generateFrames(_ url:URL, framesInterval:Int, callback:@escaping (_ images:[UIImage]?) -> ()) {
         
-        DispatchQueue.global(priority: DispatchQueue.GlobalQueuePriority.background).async { () -> Void in
+        DispatchQueue.global(qos: DispatchQoS.QoSClass.background).async { () -> Void in
             self.generateCMTimesArrayOfFramesUsingAsset(framesInterval, asset: AVURLAsset(url: url))
             
             var i = 0
-            let test:AVAssetImageGeneratorCompletionHandler = { (_, im:CGImage?, _, result:AVAssetImageGeneratorResult, error:NSError?) in
+            let test = { (time1: CMTime, im: CGImage?, time2: CMTime, result: AVAssetImageGeneratorResult, error: Error?) in
                 if(result == AVAssetImageGeneratorResult.succeeded) {
                     print("Succeed")
                     if let image = im {
@@ -92,23 +90,22 @@ import AVFoundation
                     }
                 } else if (result == AVAssetImageGeneratorResult.failed) {
                     print("Failed with error")
-                    callback(images: nil);
+                    callback(nil);
                 } else if (result == AVAssetImageGeneratorResult.cancelled) {
                     print("Canceled")
-                    callback(images: nil);
+                    callback(nil);
                 }
-                i++
+                i = i+1
                 if(i == self.cmTimeArray.count) {
                     //Thumbnail generation completed
-                    callback(images: self.framesArray)
+                    callback(self.framesArray)
                 }
-            }
+            } as AVAssetImageGeneratorCompletionHandler
             let generator = AVAssetImageGenerator(asset: AVAsset(url: url))
             generator.apertureMode = AVAssetImageGeneratorApertureModeCleanAperture;
             generator.appliesPreferredTrackTransform = true;
             generator.requestedTimeToleranceBefore = kCMTimeZero;
             generator.requestedTimeToleranceAfter = kCMTimeZero;
-//            generator.maximumSize = CGSize(width: 200, height: 200);
             
             generator.generateCGImagesAsynchronously(forTimes: self.cmTimeArray, completionHandler: test)
         }
@@ -119,7 +116,7 @@ import AVFoundation
             cmTimeArray.removeAll()
         }
         
-        for (t:Int64 in 0 ..< asset.duration.value) {
+        for t in 0 ..< asset.duration.value {
             let thumbTime = CMTimeMake(t, asset.duration.timescale)
             let value = NSValue(time: thumbTime)
             cmTimeArray.append(value)
@@ -134,12 +131,12 @@ import AVFoundation
             cmTimeArray.removeAll()
         }
         
-        for (t in 0 ..< videoDuration) {
+        for t in 0 ..< videoDuration {
             let tempInt = Int64(t)
             let tempCMTime = CMTimeMake(tempInt, asset.duration.timescale)
             let interval = Int32(framesInterval)
             
-            for (j in 1 ..< framesInterval+1) {
+            for j in 1 ..< framesInterval+1 {
                 let newCMtime = CMTimeMake(Int64(j), interval)
                 let addition = CMTimeAdd(tempCMTime, newCMtime)
                 cmTimeArray.append(NSValue(time: addition))
