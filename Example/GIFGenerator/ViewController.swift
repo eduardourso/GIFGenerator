@@ -8,53 +8,47 @@
 
 import UIKit
 import GIFGenerator
-import FLAnimatedImage
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
-    let imageView = FLAnimatedImageView()
+    @IBOutlet weak var resultLabel: UILabel!
+
     let gifGenerator = GifGenerator()
+    private let imageView = UIImageView()
     
     let images2:[UIImage] = [UIImage(named: "bart1.jpg")!, UIImage(named: "bart2.jpg")!, UIImage(named: "bart3.jpg")!, UIImage(named: "bart4.jpg")!, UIImage(named: "bart5.jpg")!]
+    let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
     
-    @IBAction func gifFromImages(sender: AnyObject) {
+    @IBAction func gifFromImages(_ sender: AnyObject) {
         self.generateAnimatedImage(images2)
     }
     
-    @IBAction func gifFromVideo(sender: AnyObject) {
+    @IBAction func gifFromVideo(_ sender: AnyObject) {
         self.generateAnimatedGifFromVideo()
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.view.addSubview(self.imageView)
-    }
-    
-    func generateAnimatedImage(imageArray: [UIImage]) {
-    
-        let documentsPath : String = NSSearchPathForDirectoriesInDomains(.DocumentDirectory,.UserDomainMask,true)[0]
-        let destinationPath :String = documentsPath.stringByAppendingString("/animated.gif")
+    func generateAnimatedImage(_ imageArray: [UIImage]) {
+
+        let destinationPath = documentsPath + "/imageAnimated.gif"
         
-        gifGenerator.generateGifFromImages(imagesArray: imageArray, frameDelay: 0.5, destinationURL: NSURL(fileURLWithPath: destinationPath), callback: { (data, error) -> () in
-            let image = FLAnimatedImage(animatedGIFData: data)
-            self.imageView.animatedImage = image
-            self.imageView.frame = CGRectMake(0, 0, image.size.width/2, image.size.height/2)
-            self.imageView.center = self.view.center
+        gifGenerator.generateGifFromImages(imagesArray: imageArray, frameDelay: 0.5, destinationURL: URL(fileURLWithPath: destinationPath), callback: { (data, error) -> () in
+            print("Gif generated under \(destinationPath)")
+            DispatchQueue.main.async {
+                self.resultLabel.text = "Gif generated under \(destinationPath)"
+            }
         })
     }
     
     func generateAnimatedGifFromVideo() {
+
+        let destinationPath = documentsPath + "/videoAnimated.gif"
         
-        let documentsPath : String = NSSearchPathForDirectoriesInDomains(.DocumentDirectory,.UserDomainMask,true)[0]
-        let destinationPath :String = documentsPath.stringByAppendingString("/animated.gif")
-        
-        if let url = NSBundle.mainBundle().URLForResource("myvideo", withExtension: "mp4"){
+        if let url = Bundle.main.url(forResource: "myvideo", withExtension: "mp4") {
             
-            gifGenerator.generateGifFromVideoURL(videoURL: url, framesInterval: 10, frameDelay: 0.2, destinationURL: NSURL(fileURLWithPath: destinationPath), callback: { (data, error) -> () in
-                if let image = FLAnimatedImage(animatedGIFData: data) {
-                    self.imageView.animatedImage = image
-                    self.imageView.frame = CGRectMake(0, 0, image.size.width, image.size.height)
-                    self.imageView.center = self.view.center
+            gifGenerator.generateGifFromVideoURL(videoURL: url, framesInterval: 10, frameDelay: 0.2, destinationURL: URL(fileURLWithPath: destinationPath), callback: { (data, error) -> () in
+                print("Gif generated under \(destinationPath)")
+                DispatchQueue.main.async {
+                    self.resultLabel.text = "Gif generated under \(destinationPath)"
                 }
             })
         } else {
