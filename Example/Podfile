@@ -1,7 +1,8 @@
 source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
 use_frameworks!
 
 target 'GIFGenerator_Example' do
-  pod 'GIFGenerator', :path => '../'
+  pod 'GIFGenerator'
   pod 'FLAnimatedImage'
 end
