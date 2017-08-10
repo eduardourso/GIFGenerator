@@ -8,12 +8,13 @@
 
 import UIKit
 import GIFGenerator
-import FLAnimatedImage
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
-    let imageView = FLAnimatedImageView()
+    @IBOutlet weak var resultLabel: UILabel!
+
     let gifGenerator = GifGenerator()
+    private let imageView = UIImageView()
     
     let images2:[UIImage] = [UIImage(named: "bart1.jpg")!, UIImage(named: "bart2.jpg")!, UIImage(named: "bart3.jpg")!, UIImage(named: "bart4.jpg")!, UIImage(named: "bart5.jpg")!]
     
@@ -25,36 +26,30 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.generateAnimatedGifFromVideo()
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.view.addSubview(self.imageView)
-    }
-    
     func generateAnimatedImage(_ imageArray: [UIImage]) {
     
         let documentsPath : String = NSSearchPathForDirectoriesInDomains(.documentDirectory,.userDomainMask,true)[0]
-        let destinationPath :String = documentsPath + "/animated.gif"
+        let destinationPath :String = documentsPath + "/imageAnimated.gif"
         
         gifGenerator.generateGifFromImages(imagesArray: imageArray, frameDelay: 0.5, destinationURL: URL(fileURLWithPath: destinationPath), callback: { (data, error) -> () in
-            let image = FLAnimatedImage(animatedGIFData: data)
-            self.imageView.animatedImage = image
-            self.imageView.frame = CGRect(x: 0, y: 0, width: (image?.size.width)!/2, height: (image?.size.height)!/2)
-            self.imageView.center = self.view.center
+            print("Gif generated under \(destinationPath)")
+            DispatchQueue.main.async {
+                self.resultLabel.text = "Gif generated under \(destinationPath)"
+            }
         })
     }
     
     func generateAnimatedGifFromVideo() {
         
         let documentsPath : String = NSSearchPathForDirectoriesInDomains(.documentDirectory,.userDomainMask,true)[0]
-        let destinationPath :String = documentsPath + "/animated.gif"
+        let destinationPath :String = documentsPath + "/videoAnimated.gif"
         
         if let url = Bundle.main.url(forResource: "myvideo", withExtension: "mp4"){
             
             gifGenerator.generateGifFromVideoURL(videoURL: url, framesInterval: 10, frameDelay: 0.2, destinationURL: URL(fileURLWithPath: destinationPath), callback: { (data, error) -> () in
-                if let image = FLAnimatedImage(animatedGIFData: data) {
-                    self.imageView.animatedImage = image
-                    self.imageView.frame = CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height)
-                    self.imageView.center = self.view.center
+                print("Gif generated under \(destinationPath)")
+                DispatchQueue.main.async {
+                    self.resultLabel.text = "Gif generated under \(destinationPath)"
                 }
             })
         } else {

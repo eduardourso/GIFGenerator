@@ -33,19 +33,12 @@ import AVFoundation
                 CGImageDestinationSetProperties(imageDestination, gifProperties)
                 if CGImageDestinationFinalize(imageDestination) {
                     
-                    print("animated GIF file created at ", destinationURL)
-                    
                     do {
-                        let attr = try FileManager.default.attributesOfItem(atPath: destinationURL.path) as NSDictionary?
-                        
-                        if let _attr = attr {
-                            print("FILE SIZE: ", ByteCountFormatter.string(fromByteCount: Int64(_attr.fileSize()), countStyle: .file))
-                        }
+                        callback(try? Data(contentsOf: destinationURL), nil)
                     } catch {
-                        print("Error: \(error)")
+                        callback(nil, error as NSError)
                     }
-                    
-                    callback(try? Data(contentsOf: destinationURL), nil)
+
                 } else {
                     callback(nil, self.errorFromString("Couldn't create the final image"))
                 }
@@ -84,15 +77,12 @@ import AVFoundation
             var i = 0
             let test = { (time1: CMTime, im: CGImage?, time2: CMTime, result: AVAssetImageGeneratorResult, error: Error?) in
                 if(result == AVAssetImageGeneratorResult.succeeded) {
-                    print("Succeed")
                     if let image = im {
                         self.framesArray.append(UIImage(cgImage: image))
                     }
                 } else if (result == AVAssetImageGeneratorResult.failed) {
-                    print("Failed with error")
                     callback(nil);
                 } else if (result == AVAssetImageGeneratorResult.cancelled) {
-                    print("Canceled")
                     callback(nil);
                 }
                 i = i+1

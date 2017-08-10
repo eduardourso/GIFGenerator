@@ -3,6 +3,5 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'GIFGenerator_Example' do
-  pod 'GIFGenerator'
-  pod 'FLAnimatedImage'
+  pod 'GIFGenerator', :path => '../'
 end

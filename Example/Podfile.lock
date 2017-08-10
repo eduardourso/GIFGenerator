@@ -1,15 +1,16 @@
 PODS:
-  - FLAnimatedImage (1.0.12)
   - GIFGenerator (0.2.0)
 
 DEPENDENCIES:
-  - FLAnimatedImage
-  - GIFGenerator
+  - GIFGenerator (from `../`)
+
+EXTERNAL SOURCES:
+  GIFGenerator:
+    :path: ../
 
 SPEC CHECKSUMS:
-  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   GIFGenerator: cc64975b1f6fdd9886a0259800d8b4d330781c4b
 
-PODFILE CHECKSUM: 36dc4adc9456d0e076a21e02636804cdcdb7049f
+PODFILE CHECKSUM: a30bc838638cc1baff83cb7cc9587133b7db289a
 
 COCOAPODS: 1.3.0

@@ -13,7 +13,6 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		66DEF7EFACF84E4ED57D30EC /* Pods_GIFGenerator_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ABF38B613BDF9820AE724AF /* Pods_GIFGenerator_Example.framework */; };
 		6B4EEBE91C57920A0068B65F /* bart1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B4EEBE41C57920A0068B65F /* bart1.jpg */; };
 		6B4EEBEA1C57920A0068B65F /* bart2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B4EEBE51C57920A0068B65F /* bart2.jpg */; };
 		6B4EEBEB1C57920A0068B65F /* bart3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B4EEBE61C57920A0068B65F /* bart3.jpg */; };
@@ -21,6 +20,7 @@
 		6B4EEBED1C57920A0068B65F /* bart5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B4EEBE81C57920A0068B65F /* bart5.jpg */; };
 		6BAC2BF01D947CDE009E8EBB /* Pods_GIFGenerator_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BAC2BEF1D947CDE009E8EBB /* Pods_GIFGenerator_Example.framework */; };
 		6BEAEB8A1C908811002821EE /* myvideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6BEAEB891C90874D002821EE /* myvideo.mp4 */; };
+		8D3EAC65C50AF108F70862A1 /* Pods_GIFGenerator_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ABF38B613BDF9820AE724AF /* Pods_GIFGenerator_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BAC2BF01D947CDE009E8EBB /* Pods_GIFGenerator_Example.framework in Frameworks */,
-				66DEF7EFACF84E4ED57D30EC /* Pods_GIFGenerator_Example.framework in Frameworks */,
+				8D3EAC65C50AF108F70862A1 /* Pods_GIFGenerator_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,12 +347,10 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GIFGenerator_Example/Pods-GIFGenerator_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
 				"${BUILT_PRODUCTS_DIR}/GIFGenerator/GIFGenerator.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GIFGenerator.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
