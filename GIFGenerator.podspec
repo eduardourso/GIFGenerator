@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "GIFGenerator"
-  s.version          = "0.2.0"
+  s.version          = "0.3.0"
   s.summary          = "Generate animated GIF in iOS"
 
 # This description is used to generate tags and improve search results.
@@ -23,7 +23,6 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = "https://github.com/eduardourso/GIFGenerator"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Eduardo Urso" => "eduardourso@gmail.com" }
   s.source           = { :git => "https://github.com/eduardourso/GIFGenerator.git", :tag => s.version.to_s }
@@ -33,11 +32,10 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'GIFGenerator' => ['Pod/Assets/*.png']
-  }
+# s.resource_bundles = {
+#   'GIFGenerator' => ['Pod/Assets/*.png']
+# }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'ImageIO', 'MobileCoreServices'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

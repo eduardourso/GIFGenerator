@@ -34,7 +34,8 @@ import AVFoundation
                 if CGImageDestinationFinalize(imageDestination) {
                     
                     do {
-                        callback(try? Data(contentsOf: destinationURL), nil)
+                        let data = try Data(contentsOf: destinationURL)
+                        callback(data, nil)
                     } catch {
                         callback(nil, error as NSError)
                     }
